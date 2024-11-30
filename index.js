@@ -144,8 +144,8 @@ console.log(siralisayilar);
 
 // 3f çözümü
 
-const tekrarlar =sayilar.reduce((toplam,sayi)=> {toplam[sayi] = (toplam[sayi] || 0)+1; return toplam;},{});
-const sadeceTekrarlar = Object.entries(tekrarlar).filter(([a,b]) => b>1);
+const tekrarlar1 =sayilar.reduce((toplam,sayi)=> {toplam[sayi] = (toplam[sayi] || 0)+1; return toplam;},{});
+const sadeceTekrarlar = Object.entries(tekrarlar1).filter(([a,b]) => b>1);
 tekraredensayilar =[];
 
 for (let i = 0; i<sadeceTekrarlar.length; i++) { 
